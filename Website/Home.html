@@ -1,68 +1,82 @@
 <!--coded by matt-->
 <!DOCTYPE html>
 <html lang="en">
-    <!--Head-->
-    <head>
-        <link rel="shortcut icon" href="./assets/images/dancingbaby.gif">
-        
-        <title>
-            Home
-        </title>
-
-        
-    </head>
-
-    <!--Body-->
-    <body style="background-color: black;">
-        <center>
-        <h1>( ͡° ͜ʖ ͡°) Welcome To My Website ( ͡° ͜ʖ ͡°)</h1> 
-        <image src="./assets/images/dancingbaby.gif" style="float: left;"></image>
-        <image src="./assets/images/dancingbaby.gif" style="float: right;"></image>
-        <img border= 1px width="350" height="350" src="./assets/images/me.png"></img>
-        <h1 style="font-family:cursive; text-decoration: underline">Cool Links</h1>
-        <!--links-->
-        <a class="link" onmouseover="snd.play()" title="ways u can contact or send me money" href="./subpage/Socials.html">🐦 Socials</a> <br> 
-        <a class="link" onmouseover="snd.play()" title="all my coding projects"  href="./subpage/Programs.html">💻 Programs</a> <br>
-        <a class="link" onmouseover="snd.play()" title="my own music"  href="./subpage/Music.html"">🎶 Music</a> <br>
-        <a class="link" onmouseover="snd.play()" title="art i made"  href="./subpage/Gallery.html">🎨 Gallery</a> <br>
-        <a class="link" onmouseover="snd.play()" title="the recipes i use to cook" href="./subpage/Food Recipes.html">🍕 Food Recipes</a> <br>
-        <a class="link" onmouseover="snd.play()" title="my merch" href="https://store.streamelements.com/pecuna">👕 Merch</a> <br>
-        <!--/links-->
-        <br><br><br><br><br><br><br><br><br>
-        <audio  controls autoplay loop src="./assets/audio/song.mp3" type="audio/mp3"></audio>
-        </center>        
-    </body>
-
-    <!--Style-->
-    <style>
-        body {
-            background-image: url("./assets/images/wallpaper.png");
-            background-color: black;
-            background-repeat: no-repeat;
-            background-size:cover
-            
-        }
-       
-        .link {
-            color:black;
-            font-size: 25px;
-            text-decoration: none;
-            font-family: cursive;
-            font-weight: normal;
-        }
-        
-        .link:hover {
-            color: white;
-            font-weight: bold;
-            font-size: 26px;
-        }
-
-    </style>
-
-    <script>
-        var snd = new Audio("./assets/audio/click.mp3");
-        snd.volume = 0.2;
-    </script>
+<!--Head-->
+<head>
+    <link rel="shortcut icon" href="./assets/images/dancingbaby.gif">
     
+    <title>
+        Home
+    </title>
+</head>
+
+<!--Body-->
+<body style="background-color: black;">
+    <center>
+    <h1>( ͡° ͜ʖ ͡°) Welcome To My Website ( ͡° ͜ʖ ͡°)</h1> 
+    <image src="./assets/images/dancingbaby.gif" style="float: left;"></image>
+    <image src="./assets/images/dancingbaby.gif" style="float: right;"></image>
+    <img border= 1px width="350" height="350" src="./assets/images/me.png"></img>
+    <h1 class="rainbow" style="font-family:cursive; text-decoration: underline">🔗Cool Links🔗</h1>
+    <!--links-->
+    <a class="link" onmouseover="snd.play()" title="ways u can contact or send me money" href="./subpage/Socials.html">🐦 Socials</a> <br> 
+    <a class="link" onmouseover="snd.play()" title="all my coding projects"  href="./subpage/Programs.html">💻 Programs</a> <br>
+    <a class="link" onmouseover="snd.play()" title="my own music"  href="./subpage/Music.html"">🎶 Music</a> <br>
+    <a class="link" onmouseover="snd.play()" title="art i made"  href="./subpage/Gallery.html">🎨 Gallery</a> <br>
+    <a class="link" onmouseover="snd.play()" title="the recipes i use to cook" href="./subpage/Food Recipes.html">🍕 Food Recipes</a> <br>
+    <a class="link" onmouseover="snd.play()" title="my merch" href="https://store.streamelements.com/pecuna">👕 Merch</a> <br>
+    <!--/links-->
+    <br><br><br><br><br><br><br><br><br>
+    <audio  controls autoplay loop src="./assets/audio/song.mp3" type="audio/mp3"></audio>
+    </center>        
+</body>
+
+<!--Style-->
+<style>
+    body {
+        background-image: url("./assets/images/wallpaper.png");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size:cover         
+    }
+       
+    .link {
+        color:black;
+        font-size: 25px;
+        text-decoration: none;
+        font-family: cursive;
+        font-weight: normal;
+    }
+        
+    .link:hover {
+        color: white;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .rainbow{
+        -webkit-animation: anirain 10s linear infinite alternate;
+        font-weight: bold;
+    }
+
+    @keyframes anirain {
+        0% {color:#f43545}
+        10% {color:#fa8901}
+        20% {color:#fad717}
+        30% {color:#00ba71}
+        40% {color:#00c2de}
+        40% {color:#00418d}
+        60% {color:#5f2879}
+        70% {color:#00418d}
+        80% {color:#00ba71}
+        90% {color:#fad717}
+        100% {color:#f43545}
+    }
+</style>
+
+<script>
+    var snd = new Audio("./assets/audio/click.mp3");
+    snd.volume = 0.2;
+</script>
 </html>
 
