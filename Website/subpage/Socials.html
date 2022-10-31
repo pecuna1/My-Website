@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            My Socials
-        </title>
-    </head>
+<head>
+    <title>
+        My Socials
+    </title>
+</head>
 
-    <body>
-        <li>Discord</li>
-        <li>Youtube</li>
-        <li>Github</li>
-        <li>Steam</li>
-    </body>
+<body>
+    <a class="link" onmouseover="snd.play()" title="home" href="../Home.html">🏡 Home</a>
+    <li>Discord</li>
+    <li>Youtube</li>
+    <li>Github</li>
+    <li>Steam</li>
+</body>
+<style>
+        body{
+            background-image: url("../assets/images/wallpaper.png");
+            background-size: cover;
+            background-color: black;
+        }
+        .link{
+            font-weight: bold;
+            font-family: cursive;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        .link:hover{
+            font-size: 16px;
+            color: white;
+        }
+    
+</style>
+<script>
+        var snd = new Audio("../assets/audio/click.mp3")
+        snd.volume = 0.2;
+</script>
 </html>

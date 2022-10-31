@@ -5,6 +5,7 @@
 </head>
 
 <body>
+    <a class="link" onmouseover="snd.play()" title="home" href="../Home.html">🏡 Home</a>
     <center>
     <h1 style="color:white; font-weight: bold; font-family:cursive; font-size: 40px;">Nothing Here Yet</h1>
     </center>
@@ -16,5 +17,22 @@
         background-size: cover;
         background-color: black;
     }
+    .link{
+        font-weight: bold;
+        font-family: cursive;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .link:hover{
+        font-size: 16px;
+        color: white;
+    }
+
 </style>
+
+<script>
+    var snd = new Audio("../assets/audio/click.mp3")
+    snd.volume = 0.2;
+</script>
 </html>
