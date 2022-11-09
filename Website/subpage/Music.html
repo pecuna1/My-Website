@@ -9,7 +9,7 @@
     <center>
     <h1 hidden style="color:white; font-weight: bold; font-family:cursive; font-size: 40px;">Nothing Here Yet</h1>
     <a href="https://www.youtube.com/channel/UCV4UK9LNNLViFP4qZA_Wmfw"><img width="400" height="400" src="../assets/images/yeat.png"></a>
-    <p class="rainbow" style="font-size: 20px;">Hey guys its me, Yeat. Yes, I am the real Yeat. <br> Click my image to check out my music.</p>
+    <p onmouseover="yeat.play()" class="rainbow" style="font-size: 20px;">Hey guys its me, Yeat. Yes, I am the real Yeat. <br> Click my image to check out my music.</p>
     </center>
 </body>
 
@@ -53,5 +53,8 @@
 <script>
     var snd = new Audio("../assets/audio/click.mp3")
     snd.volume = 0.2;
+    var yeat = new Audio("../assets/audio/yeat.mp3")
+    yeat.volume = 1;
+    yeat.play()
 </script>
 </html>
