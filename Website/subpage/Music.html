@@ -7,7 +7,9 @@
 <body>
     <a class="link" onmouseover="snd.play()" title="home" href="../Home.html">🏡 Home</a>
     <center>
-    <h1 style="color:white; font-weight: bold; font-family:cursive; font-size: 40px;">Nothing Here Yet</h1>
+    <h1 hidden style="color:white; font-weight: bold; font-family:cursive; font-size: 40px;">Nothing Here Yet</h1>
+    <a href="https://www.youtube.com/channel/UCV4UK9LNNLViFP4qZA_Wmfw"><img width="400" height="400" src="../assets/images/yeat.png"></a>
+    <p class="rainbow" style="font-size: 20px;">Hey guys its me, Yeat. Yes, I am the real Yeat. <br> Click my image to check out my music.</p>
     </center>
 </body>
 
@@ -28,7 +30,24 @@
         font-size: 16px;
         color: white;
     }
+    .rainbow{
+        -webkit-animation: anirain 10s linear infinite alternate;
+        font-weight: bold;
+    }
 
+    @keyframes anirain {
+        0% {color:#f43545}
+        10% {color:#fa8901}
+        20% {color:#fad717}
+        30% {color:#00ba71}
+        40% {color:#00c2de}
+        40% {color:#00418d}
+        60% {color:#5f2879}
+        70% {color:#00418d}
+        80% {color:#00ba71}
+        90% {color:#fad717}
+        100% {color:#f43545}
+    }
 </style>
 
 <script>
